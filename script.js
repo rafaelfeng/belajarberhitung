@@ -19,12 +19,12 @@ function level(lvl) {
         else if (lvl==2)
             lim = 10;
         else if (lvl==3)
-            lim = 15;
+            lim = 20;
         else if (lvl==4)
-            lim = 30;            
+            lim = 40;            
     }
     else if (lvl==5) {
-        lim = 50;
+        lim = 80;
         opr = ["+", "-", "*", "*"];
     }
     $("#diff").hide();
