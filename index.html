@@ -25,33 +25,33 @@
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     </head>
     <body>
-    <span id="logo">Math Quiz</span>
+    <span id="logo">Belajar Berhitung</span>
     <div class="titlebar">
         <div id="count">
             Total<span id="total">0</span>
         </div>
         <div id="count">
-            True<span id="correct">0</span>
+            B<span id="correct">0</span>
         </div>
         <div id="count">
-            Wrong<span id="wrong">0</span>
+            S<span id="wrong">0</span>
         </div>
     </div>
         
     <div id="diff">
         <h2>Select level</h2>
-        <button onclick="level(1)">Very Easy</button><br />
-        <button onclick="level(2)">Easy</button><br />
-        <button onclick="level(3)">Medium</button><br />
-        <button onclick="level(4)">Hard</button><br />
-        <button onclick="level(5)">Very Hard</button>
+        <button onclick="level(1)">Sangat Mudah</button><br />
+        <button onclick="level(2)">Mudah</button><br />
+        <button onclick="level(3)">Sedang</button><br />
+        <button onclick="level(4)">Susah</button><br />
+        <button onclick="level(5)">Sangat Susah</button>
         <div style="height:20px"></div>
         <button style="height: 40px;width:220px" id="mode">Quick Mode (OFF)</button><button style="width:40px;height:40px" id="ex">?</button>
     </div>
     
     <div id="quizbody">
         <div style="height:10px"></div>
-        <div id='serial'><span>Question. </span><span id='no'>1</span></div>
+        <div id='serial'><span>Soal. </span><span id='no'>1</span></div>
         <p id="question"></p>
         <center><div id="timer">
             <div id="bar"></div>
@@ -60,7 +60,7 @@
         <input id="answer" readonly>
         <button id="del" style="width:45px;padding:5px;">←</button>
         <br />
-        <button id="donebtn" onclick="check()">Done</button>
+        <button id="donebtn" onclick="check()">Kumpulkan</button>
         <div id="nums">     
                 <button onclick="ins(1)">$1$</button> 
                 <button onclick="ins(2)">$2$</button> 
@@ -78,7 +78,7 @@
                 <button onclick="ins(0)">$0$</button> 
         </div>
         <br />
-        Note : $+$ is sum, $-$ is minus, $*$ is product ($\times$).</br>
+        Catatan : $+$ adalah jumlah, $-$ adalah kurang dan $*$ adalah kali ($\times$).</br>
         <button id="res">Reset</button>
     </div>
     <br />           
