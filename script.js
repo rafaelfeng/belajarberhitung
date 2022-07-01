@@ -19,12 +19,12 @@ function level(lvl) {
         else if (lvl==2)
             lim = 10;
         else if (lvl==3)
-            lim = 20;
+            lim = 25;
         else if (lvl==4)
-            lim = 40;            
+            lim = 50;            
     }
     else if (lvl==5) {
-        lim = 80;
+        lim = 100;
         opr = ["+", "-", "*", "*"];
     }
     $("#diff").hide();
@@ -49,7 +49,7 @@ function quiz() {
     question = n1+r1+n2+r2+n3;
     ans = eval(question);
     $("#question").html(question+" = ?");
-    t = setInterval(timeCheck, 120);
+    t = setInterval(timeCheck, 150);
 }
 
 //Checking Answer
@@ -58,8 +58,8 @@ function check() {
     if(input == ans) {
         Swal.fire({
           icon: 'success',
-          title: 'Correct',
-          text: ans + ' is correct.',
+          title: 'Benar',
+          text: ans + ' adalah benar.',
           showConfirmButton: false,
           timer: 1500
         });
@@ -69,8 +69,8 @@ function check() {
     else {
         Swal.fire({
           icon: 'error',
-          title: 'Wrong',
-          text: 'The answer was '+ans,
+          title: 'Salah',
+          text: 'Jawaban yang benar adalah '+ans,
           showConfirmButton: false,
           timer: 1500
         });
@@ -112,8 +112,8 @@ function timeCheck() {
         clearInterval(t);
         Swal.fire({
           icon: 'warning',
-          title: 'Timeout',
-          text: 'The answer was '+ans,
+          title: 'Waktu habis',
+          text: 'Jawaban yang benar adalah '+ans,
           showConfirmButton: false,
           timer: 1500
         });
@@ -170,7 +170,7 @@ $(function() {
         Swal.fire({
           icon: 'info',
           title: 'Quick Mode',
-          text: 'When Quick Mode is on, system will automatically detect the right answer',
+          text: 'Ketika Quick Mode diaktifkan (ON), sistem langsung mendeteksi jawaban jika benar.',
           showConfirmButton: true,
         });
     });
