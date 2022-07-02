@@ -12,7 +12,7 @@ $(document).ready(function() {
 
 //Selecting Difficulty Level
 function level(lvl) {
-    if (lvl<3) {
+    if (lvl<5) {
         opr = ["+", "-", "*"];        
         if (lvl==1)
             lim = 5;
