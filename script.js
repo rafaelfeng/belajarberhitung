@@ -49,7 +49,7 @@ function quiz() {
     question = n1+r1+n2+r2+n3;
     ans = eval(question);
     $("#question").html(question+" = ?");
-    t = setInterval(timeCheck, 500);
+    t = setInterval(timeCheck, 400);
 }
 
 //Checking Answer
