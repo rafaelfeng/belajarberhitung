@@ -13,18 +13,18 @@ $(document).ready(function() {
 //Selecting Difficulty Level
 function level(lvl) {
     if (lvl<5) {
-        if (lvl==1)
+        if (lvl==1){
             opr = ["+", "-"];        
-            lim = 5;
-        else if (lvl==2)
+            lim = 5;}
+        else if (lvl==2){
             opr = ["+", "-"];        
-            lim = 10;
-        else if (lvl==3)
+            lim = 10;}
+        else if (lvl==3){
             opr = ["+", "-"];        
-            lim = 25;
-        else if (lvl==4)
+            lim = 25;}
+        else if (lvl==4){
             opr = ["+", "-", "*"];        
-            lim = 50;            
+            lim = 50;    }        
     }
     else if (lvl==5) {
         lim = 80;
