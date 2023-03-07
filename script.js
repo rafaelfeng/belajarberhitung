@@ -64,7 +64,7 @@ function check() {
           title: 'Benar',
           text: ans + ' adalah benar.',
           showConfirmButton: false,
-          timer: 500
+          timer: 1000
         });
         correct++;
         $("#correct").html(correct);
@@ -75,7 +75,7 @@ function check() {
           title: 'Salah',
           text: 'Jawaban yang benar adalah '+ans,
           showConfirmButton: false,
-          timer: 500
+          timer: 1000
         });
         wrong++;
         $("#wrong").html(wrong);
