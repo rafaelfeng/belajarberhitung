@@ -13,18 +13,21 @@ $(document).ready(function() {
 //Selecting Difficulty Level
 function level(lvl) {
     if (lvl<5) {
-        opr = ["+", "-", "*"];        
         if (lvl==1)
+            opr = ["+", "-"];        
             lim = 5;
         else if (lvl==2)
+            opr = ["+", "-"];        
             lim = 10;
         else if (lvl==3)
+            opr = ["+", "-"];        
             lim = 25;
         else if (lvl==4)
+            opr = ["+", "-", "*"];        
             lim = 50;            
     }
     else if (lvl==5) {
-        lim = 100;
+        lim = 80;
         opr = ["+", "-", "*", "*"];
     }
     $("#diff").hide();
@@ -49,7 +52,7 @@ function quiz() {
     question = n1+r1+n2+r2+n3;
     ans = eval(question);
     $("#question").html(question+" = ?");
-    t = setInterval(timeCheck, 400);
+    t = setInterval(timeCheck, 300);
 }
 
 //Checking Answer
@@ -72,7 +75,7 @@ function check() {
           title: 'Salah',
           text: 'Jawaban yang benar adalah '+ans,
           showConfirmButton: false,
-          timer: 1500
+          timer: 500
         });
         wrong++;
         $("#wrong").html(wrong);
@@ -115,7 +118,7 @@ function timeCheck() {
           title: 'Waktu habis',
           text: 'Jawaban yang benar adalah '+ans,
           showConfirmButton: false,
-          timer: 1500
+          timer: 500
         });
         wrong++;
         $("#wrong").html(wrong);
