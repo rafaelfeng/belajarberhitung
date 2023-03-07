@@ -64,7 +64,7 @@ function check() {
           title: 'Benar',
           text: ans + ' adalah benar.',
           showConfirmButton: false,
-          timer: 1500
+          timer: 500
         });
         correct++;
         $("#correct").html(correct);
